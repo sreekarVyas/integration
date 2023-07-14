@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import { Children } from "react";
 import Users from "./components/Users";
+import Form from "./components/form/Form";
 
 function App() {
   const routerObject = createBrowserRouter([
@@ -13,6 +14,10 @@ function App() {
         { 
           path: "/users",
           element: <Users /> 
+        },
+        {
+          path: '/form',
+          element: <Form />
         }
       ],
     },
