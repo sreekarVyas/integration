@@ -23,13 +23,13 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <Link className="nav-link" href="/users">
+              <Link className="nav-link" to="/home">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
-                Link
+              <Link className="nav-link" to="/users">
+                Users
               </Link>
             </li>
             <li className="nav-item dropdown">
@@ -63,7 +63,6 @@ function NavBar() {
               </Link>
             </li>
           </ul>
-          
         </div>
       </nav>
     </>
