@@ -1,0 +1,26 @@
+.container {
+	max-width: 400px;
+	margin: 50px auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	font-weight: bold;
+}
+
+.form-group input[type='text'],
+.form-group input[type='number'] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.btn-primary {
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
