@@ -12,6 +12,7 @@ function Form() {
   } = useForm();
 
   let submitForm = (data) => {
+    console.log(data)
     axios
       .post("http://127.0.0.1:8000/users/", data)
       .then((response) => {
@@ -26,7 +27,7 @@ function Form() {
     <div className="container">
       <form onSubmit={handleSubmit(submitForm)}>
         <div className="form-group">
-          <label for="name">Name:</label>
+          <label htmlFor="name">Name:</label>
           <input
             type="text"
             className="form-control"
@@ -39,7 +40,7 @@ function Form() {
           )}
         </div>
         <div className="form-group">
-          <label for="age">Age:</label>
+          <label htmlFor="age">Age:</label>
           <input
             type="number"
             className="form-control"
